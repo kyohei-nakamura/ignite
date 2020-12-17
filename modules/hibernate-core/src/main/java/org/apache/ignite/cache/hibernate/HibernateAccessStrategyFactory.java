@@ -26,6 +26,7 @@ import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteException;
 import org.apache.ignite.IgniteLogger;
 import org.apache.ignite.Ignition;
+import org.apache.ignite.cluster.ClusterState;
 import org.apache.ignite.configuration.TransactionConfiguration;
 import org.apache.ignite.internal.IgniteKernal;
 import org.apache.ignite.internal.processors.cache.IgniteInternalCache;
@@ -117,8 +118,10 @@ public class HibernateAccessStrategyFactory {
                 throw eConverter.convert(e);
             }
         }
-        else
+        else {
             ignite = Ignition.ignite(igniteInstanceName == null ? null : igniteInstanceName.toString());
+            ignite.cluster().state(ClusterState.ACTIVE);
+        }
 
         for (Map.Entry entry : cfgValues.entrySet()) {
             String key = entry.getKey().toString();
