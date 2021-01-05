@@ -51,311 +51,348 @@
 
                 <!-- Configurations for entity caches. -->
                 <bean parent="transactional-cache">
-                    <property name="name" value="Catalog" />
+                    <property name="name" value="com.salesmanager.core.model.catalog.catalog.Catalog" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="CatalogCategoryEntry" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Category" />
+                    <property name="name" value="com.salesmanager.core.model.catalog.category.Category" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="CategoryDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.category.CategoryDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Product" />
+                    <property name="name" value="com.salesmanager.core.model.catalog.product.Product" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductAttribute" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.attribute.ProductAttribute" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductOption" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.attribute.ProductOption" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductOptionDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.attribute.ProductOptionDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductOptionSet" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductOptionValue" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductOptionValueDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.attribute.ProductOptionValueDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductVariant" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.attribute.ProductVariant" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductAvailability" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.availability.ProductAvailability" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.description.ProductDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="DigitalProduct" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.file.DigitalProduct" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductImage" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.image.ProductImage" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductImageDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.image.ProductImageDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Manufacturer" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ManufacturerDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.manufacturer.ManufacturerDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductPrice" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.price.ProductPrice" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductPriceDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.price.ProductPriceDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductRelationship" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.relationship.ProductRelationship" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductReview" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.review.ProductReview" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductReviewDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.review.ProductReviewDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductType" />
+                    <property name="name" value="com.salesmanager.core.model.catalog.product.type.ProductType" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ProductTypeDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.catalog.product.type.ProductTypeDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Content" />
+                    <property name="name" value="com.salesmanager.core.model.content.Content" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ContentDescription" />
+                    <property name="name" value="com.salesmanager.core.model.content.ContentDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Customer" />
+                    <property name="name" value="com.salesmanager.core.model.customer.Customer" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="CustomerAttribute" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.customer.attribute.CustomerAttribute" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="CustomerOption" />
+                    <property name="name" value="com.salesmanager.core.model.customer.attribute.CustomerOption" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="CustomerOptionDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.customer.attribute.CustomerOptionDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="CustomerOptionSet" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.customer.attribute.CustomerOptionSet" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="CustomerOptionValue" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.customer.attribute.CustomerOptionValue" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="CustomerOptionValueDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.customer.attribute.CustomerOptionValueDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="UserConnection" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.customer.connection.UserConnection" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="CustomerReview" />
+                    <property name="name" value="com.salesmanager.core.model.customer.review.CustomerReview" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="CustomerReviewDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.customer.review.CustomerReviewDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="MerchantStore" />
+                    <property name="name" value="com.salesmanager.core.model.merchant.MerchantStore" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Order" />
+                    <property name="name" value="com.salesmanager.core.model.order.Order" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="OrderTotal" />
+                    <property name="name" value="com.salesmanager.core.model.order.OrderTotal" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="OrderAttribute" />
+                    <property name="name" value="com.salesmanager.core.model.order.attributes.OrderAttribute" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="FileHistory" />
+                    <property name="name" value="com.salesmanager.core.model.order.filehistory.FileHistory" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="OrderAccount" />
+                    <property name="name" value="com.salesmanager.core.model.order.orderaccount.OrderAccount" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="OrderAccountProduct" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.order.orderaccount.OrderAccountProduct" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="OrderProduct" />
+                    <property name="name" value="com.salesmanager.core.model.order.orderproduct.OrderProduct" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="OrderProductAttribute" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.order.orderproduct.OrderProductAttribute" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="OrderProductDownload" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.order.orderproduct.OrderProductDownload" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="OrderProductPrice" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.order.orderproduct.OrderProductPrice" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="OrderStatusHistory" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.order.orderstatus.OrderStatusHistory" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Transaction" />
+                    <property name="name" value="com.salesmanager.core.model.payments.Transaction" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Country" />
+                    <property name="name" value="com.salesmanager.core.model.reference.country.Country" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="CountryDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.reference.country.CountryDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Currency" />
+                    <property name="name" value="com.salesmanager.core.model.reference.currency.Currency" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="GeoZone" />
+                    <property name="name" value="com.salesmanager.core.model.reference.geozone.GeoZone" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="GeoZoneDescription" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.reference.geozone.GeoZoneDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Language" />
+                    <property name="name" value="com.salesmanager.core.model.reference.language.Language" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Zone" />
+                    <property name="name" value="com.salesmanager.core.model.reference.zone.Zone" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ZoneDescription" />
+                    <property name="name" value="com.salesmanager.core.model.reference.zone.ZoneDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Quote" />
+                    <property name="name" value="com.salesmanager.core.model.shipping.Quote" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ShippingOrigin" />
+                    <property name="name" value="com.salesmanager.core.model.shipping.ShippingOrigin" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ShoppingCart" />
+                    <property name="name" value="com.salesmanager.core.model.shoppingcart.ShoppingCart" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ShoppingCartAttributeItem" />
+                    <property name="name"
+                        value="com.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="ShoppingCartItem" />
+                    <property name="name" value="com.salesmanager.core.model.shoppingcart.ShoppingCartItem" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="IntegrationModule" />
+                    <property name="name" value="com.salesmanager.core.model.system.IntegrationModule" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="MerchantConfiguration" />
+                    <property name="name" value="com.salesmanager.core.model.system.MerchantConfiguration" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="MerchantLog" />
+                    <property name="name" value="com.salesmanager.core.model.system.MerchantLog" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="SystemConfiguration" />
+                    <property name="name" value="com.salesmanager.core.model.system.SystemConfiguration" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="SystemNotification" />
+                    <property name="name" value="com.salesmanager.core.model.system.SystemNotification" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="CustomerOptin" />
+                    <property name="name" value="com.salesmanager.core.model.system.optin.CustomerOptin" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Optin" />
+                    <property name="name" value="com.salesmanager.core.model.system.optin.Optin" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="TaxClass" />
+                    <property name="name" value="com.salesmanager.core.model.tax.taxclass.TaxClass" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="TaxRate" />
+                    <property name="name" value="com.salesmanager.core.model.tax.taxrate.TaxRate" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="TaxRateDescription" />
+                    <property name="name" value="com.salesmanager.core.model.tax.taxrate.TaxRateDescription" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Group" />
+                    <property name="name" value="com.salesmanager.core.model.user.Group" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="Permission" />
+                    <property name="name" value="com.salesmanager.core.model.user.Permission" />
                 </bean>
 
                 <bean parent="transactional-cache">
-                    <property name="name" value="User" />
+                    <property name="name" value="com.salesmanager.core.model.user.User" />
                 </bean>
             </list>
         </property>
