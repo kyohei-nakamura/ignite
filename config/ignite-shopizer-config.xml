@@ -44,6 +44,11 @@
 
         <property name="cacheConfiguration">
             <list>
+                <!-- Holding timestamps of the most recent updates to queryable tables. -->
+                <bean parent="transactional-cache">
+                    <property name="name" value="default-update-timestamps-region" />
+                </bean>
+
                 <!-- Configurations for entity caches. -->
                 <bean parent="transactional-cache">
                     <property name="name" value="Catalog" />
