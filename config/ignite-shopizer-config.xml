@@ -399,16 +399,6 @@
             </list>
         </property>
 
-        <property name="includeEventTypes">
-            <list />
-        </property>
-
-        <property name="loadBalancingSpi">
-            <bean class="org.apache.ignite.spi.loadbalancing.roundrobin.RoundRobinLoadBalancingSpi">
-                <property name="perTask" value="false" />
-            </bean>
-        </property>
-
         <property name="discoverySpi">
             <bean class="org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi">
                 <property name="ipFinder">
@@ -446,18 +436,6 @@
                 <property name="walPath" value="/opt/ignite-data/wal" />
 
                 <property name="walArchivePath" value="/opt/ignite-data/wal-archive" />
-            </bean>
-        </property>
-
-        <property name="deploymentSpi">
-            <bean class="org.apache.ignite.spi.deployment.uri.UriDeploymentSpi">
-                <property name="temporaryDirectoryPath" value="/tmp/temp_ignite_libs" />
-
-                <property name="uriList">
-                    <list>
-                        <value>file://root@192.168.21.187/opt/shopizer/sm-core-model/target</value>
-                    </list>
-                </property>
             </bean>
         </property>
     </bean>
