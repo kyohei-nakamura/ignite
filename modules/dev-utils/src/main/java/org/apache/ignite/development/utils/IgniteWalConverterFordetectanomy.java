@@ -110,7 +110,7 @@ public class IgniteWalConverterFordetectanomy extends IgniteWalConverter {
     }
 
     private static String toString(WALRecord walRecord) {
-        String walString = "";        
+        String walString = "";
         if (walRecord.type() == RecordType.DATA_RECORD) {
             DataRecord record = (DataRecord) walRecord;
             String type = record.type().name();
@@ -119,10 +119,10 @@ public class IgniteWalConverterFordetectanomy extends IgniteWalConverter {
             String writeVer = dataEntry.writeVersion().toString();
             String op = dataEntry.op().name();
             String cacheId = String.valueOf(dataEntry.cacheId());
-            String k = dataEntry.unwrappedKey().toString();
+            String k = String.valueOf(dataEntry.unwrappedKey().hashCode());
             String v = "";
             if (dataEntry.op() != GridCacheOperation.DELETE)
-                v = dataEntry.unwrappedValue().toString();
+                v = String.valueOf(dataEntry.unwrappedValue().hashCode());
             walString = type + ", " + timestamp + ", " + writeVer + ", " + op + ", " + cacheId + ", " + k + ", " + v;
         } else if (walRecord.type() == RecordType.TX_RECORD) {
             TxRecord record = (TxRecord) walRecord;
@@ -131,7 +131,7 @@ public class IgniteWalConverterFordetectanomy extends IgniteWalConverter {
             String writeVer = record.writeVersion().toString();
             String state = record.state().name();
             walString = type + ", " + timestamp + ", " + writeVer + ", " + state;
-        } 
+        }
         return walString;
     }
 }
