@@ -42,7 +42,7 @@
 
         <property name="peerClassLoadingEnabled" value="false" />
 
-        <property name="metricsLogFrequency" value="5000" />
+        <property name="metricsLogFrequency" value="60000" />
 
         <property name="cacheConfiguration">
             <list>
